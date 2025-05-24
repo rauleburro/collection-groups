@@ -1,0 +1,32 @@
+export default [
+  {
+    method: 'GET',
+    path: '/groups',
+    handler: 'group.find',
+    config: { policies: [] },
+  },
+  {
+    method: 'GET',
+    path: '/groups/:id',
+    handler: 'group.findOne',
+    config: { policies: [] },
+  },
+  {
+    method: 'POST',
+    path: '/groups',
+    handler: 'group.create',
+    config: { policies: [] },
+  },
+  {
+    method: 'PUT',
+    path: '/groups/:id',
+    handler: 'group.update',
+    config: { policies: [] },
+  },
+  {
+    method: 'DELETE',
+    path: '/groups/:id',
+    handler: 'group.delete',
+    config: { policies: [] },
+  },
+];
