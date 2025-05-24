@@ -7,7 +7,16 @@ const HomePage = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <Main>
+    <Main
+      style={{
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        width: '100%',
+      }}
+    >
       <h1>Welcome to {formatMessage({ id: getTranslation('plugin.name') })}</h1>
     </Main>
   );

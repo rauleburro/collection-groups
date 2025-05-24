@@ -1,1 +1,5 @@
-export default {};
+import group from './group/schema';
+
+export default {
+  group,
+};
