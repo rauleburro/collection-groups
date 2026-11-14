@@ -1,9 +1,9 @@
-import contentAPIRoutes from './content-api';
+import group from './group';
 
 const routes = {
   'content-api': {
     type: 'content-api',
-    routes: contentAPIRoutes,
+    routes: group,
   },
 };
 
